@@ -1,0 +1,32 @@
+https://doc.ubuntu-fr.org/miniconda
+
+conda create --name pytorch-mri python=3.9.7
+
+conda install pytorch torchvision cudatoolkit=10.2 -c pytorch 
+or
+pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f 
+
+pip install scikit-learn
+https://download.pytorch.org/whl/torch_stable.html
+pip install regex
+pip install parse
+http://echrislynch.com/2019/02/01/adding-an-environment-to-jupyter-notebooks/
+pip install matplotlib
+pip install easydict
+pip install ismrmrd
+conda install scikit-image
+pip install tqdm
+conda install -c conda-forge tensorboard
+pip install nibabel
+pip install torchsummary
+pip install piqa
+
+
+pip freeze > myrequirements.txt
+pip install -r myrequirements.txt
+
+conda on cluster
+https://github.com/um-dang/conda_on_the_cluster
+
+
+
