@@ -1,0 +1,12 @@
+source grid_search_fixedmask.sh -e learn_fixedmask -c config_fixedmask.json -m list_of_mask_df.csv
+sbatch run_job_array.sh
+
+Config
+
+'bloc'     : [1,5,10,15]
+'kernel'   : [11,11],[13,13]
+'lr_other' : [1e-2,1e-3,1e-4]
+nb_mask = 20 +3
+828
+
+[0-827]job : 950817

@@ -1,0 +1,22 @@
+source grid_search_general.sh -e learn_general -c config_general.json  
+sbatch run_job_array.sh
+
+
+Config
+'bloc'     : [1,5,10]
+'acc'      : [0.125,0.25] ##adapter le mask dim en conséquence
+'mask_dim' : [121, 145], [7, 7] 
+'kernel'   : [11, 11], [13, 13]
+'std_noise': [0.0175, 0.05]
+'lr_mask'  : [1e-2,1e-3,1e-4]
+'lr_other' : [1e-2,1e-3,1e-4]
+'acs_type' : ["no", "square"]
+
+4800
+864
+
+[0-999]job : 890677 
+
+job id 948175
+
+949052

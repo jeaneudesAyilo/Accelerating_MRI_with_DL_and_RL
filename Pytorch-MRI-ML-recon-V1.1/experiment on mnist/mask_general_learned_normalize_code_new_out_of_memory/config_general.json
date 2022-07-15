@@ -1,0 +1,1 @@
+{"std_noise": 0.05, "dropout_proba": 0.0,"acc":0.25 ,"mask_dim": [28, 28], "slope": 1,"slice_dim": [28, 28], "main_directory": "./result", "spirit_block": 5, "kernel1": [5, 5], "ncoils": 1, "spirit_activation": "none", "batch_norm": false, "lr_mask": 0.001, "lr_other": 0.01, "auxiliary": false, "shift_type":"tr_img_ksp","normalized_mse" : true, "n_epochs":5}

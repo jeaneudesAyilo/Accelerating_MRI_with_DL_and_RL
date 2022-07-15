@@ -1,0 +1,16 @@
+source grid_search_general.sh -e learn_general -c config_general.json  
+sbatch run_job_array.sh
+
+
+Config
+'bloc'     : [1,5,10,15]
+'k_local'  : [196,98] | [4,2] ##adapter le mask dim en conséquence
+'kernel'   : [3,3],[5,5],[7,7]
+'std_noise': [0.0175, 0.034 , 0.0505, 0.067 , 0.0835, 0.1 ]
+'lr_mask'  : [1e-1,1e-2,1e-3,1e-4,1e-5]
+'lr_other' : [1e-1,1e-2,1e-3,1e-4,1e-5]
+
+nb models 4800
+lower nb models 864
+
+[0-999]job : 890677 

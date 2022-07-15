@@ -1,0 +1,1 @@
+{"mask_seed": null, "mask_typ": "uniform", "decrease_std": false, "acceleration": 2, "mask_dim": [4, 4], "acs_full": 40, "acs_type": "square", "slope": 1, "slice_dim": [121, 145], "ncoils": 8, "main_directory": "./result", "spirit_block": 1, "kernel1": [11, 11], "lr_other": 0.01, "normalized_mse": true, "n_epochs": 50, "batch_size_train": 16, "batch_size_test": 16}

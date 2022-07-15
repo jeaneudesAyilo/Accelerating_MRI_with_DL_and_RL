@@ -1,0 +1,1 @@
+{"std_noise": 0.05, "mask_dim": [4, 4], "slope": 1, "slice_dim": [28, 28], "main_directory": "./result", "spirit_block": 5, "kernel1": [5, 5], "ncoils": 1, "spirit_activation": "none", "batch_norm": false, "lr_other": 0.01, "acceleration": 2, "auxiliary": false, "mask_typ": "caipiranha", "mask_seed": null, "shift_type":"tr_img_ksp","normalized_mse" : true,"n_epochs":5}
