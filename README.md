@@ -11,7 +11,7 @@ our results are limited to the non sequential sampling with local and global sam
 the model to MNIST dataset and a simulated brain data set. For MNIST, we found that the global mask
 performed better than the local and other baseline masks. Conversely for the MRI data, the Caipirinha
 baseline mask outperforms the learned masks and the learned local mask perform better than the learned
-global mask. Future works, will consist in implementation of the sampler with reinforcement learning based on [Pineda et al 2020](https://arxiv.org/abs/2007.10469) and [their repository](https://github.com/facebookresearch/active-mri-acquisition). 
+global mask. Future works (ongoing), will consist in implementation of the sampler with reinforcement learning based on [Pineda et al 2020](https://arxiv.org/abs/2007.10469) and [their repository](https://github.com/facebookresearch/active-mri-acquisition). 
 
 
 ## Installation
