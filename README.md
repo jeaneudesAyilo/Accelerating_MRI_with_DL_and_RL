@@ -5,13 +5,12 @@ reconstruction model have already been proposed for this purpose. The current st
 propose a model that jointly learns undersampling pattern to select most important part in the data and
 reconstructed the undersampled data. We exploit the SPIRiT (Iterative Self-consistent Parallel Imaging
 Reconstruction From Arbitrary k-Space, [Lustig and Pauly, 2010](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.22428) )
-reconstruction model and extend it to include and sampler model.
-The sampler could perform sequentially (using reinforcement learning (RL)) or not, but at the current step
-our results are limited to the non sequential sampling with local and global sampling mask. We apply
-the model to MNIST dataset and a simulated brain data set. For MNIST, we found that the global mask
+reconstruction model and extend it to include and sampler model. 
+The sampler could perform sequentially (using reinforcement learning (RL)) or not. We apply 
+the model to MNIST dataset and a simulated brain data set. For MNIST, we found that the global mask 
 performed better than the local and other baseline masks. Conversely for the MRI data, the Caipirinha
 baseline mask outperforms the learned masks and the learned local mask perform better than the learned
-global mask. Future works (ongoing), will consist in implementation of the sampler with reinforcement learning based on [Pineda et al 2020](https://arxiv.org/abs/2007.10469) and [their repository](https://github.com/facebookresearch/active-mri-acquisition). 
+global mask. We implemente a sampler with double deep q-network based on MNIST dataset following [Pineda et al 2020](https://arxiv.org/abs/2007.10469) and [their repository](https://github.com/facebookresearch/active-mri-acquisition). Our implementation (see this [notebook](./Pytorch-MRI-ML-recon-V1.1/RL_model/mnist_rl_reconstruction.ipynb)) is just for experimentation purposes, reaching good performance was not the objective. 
 
 
 ## Installation
